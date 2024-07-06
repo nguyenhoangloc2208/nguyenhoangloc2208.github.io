@@ -53,6 +53,8 @@ const Head = ({ title, description, image }) => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <meta name="msapplication-TileImage" content="/src/images/favicons/favicon.ico"></meta>
+      <link rel="icon" type="image/x-icon" href="/src/images/favicons/favicon.ico"></link>
     </Helmet>
   );
 };
