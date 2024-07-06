@@ -2,8 +2,8 @@
 date: '3'
 title: 'BeruWeather - Weather Forecast'
 cover: './demo.png'
-external: 'https://github.com/nguyenhoangloc2208/weather-app'
-cta: 'https://beruweather.vercel.app/'
+github: 'https://github.com/nguyenhoangloc2208/weather-app'
+external: 'https://beruweather.vercel.app/'
 tech:
   - React
   - Typescript
