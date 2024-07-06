@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/main/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   nguyenhoangloc.github.io
@@ -8,7 +8,7 @@
   The fourth iteration of <a href="https://nguyenhoangloc2208.github.io/" target="_blank">nguyenhoangloc.github.io</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
 </p>
 
-![demo](https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/main/src/images/demo.png)
+![demo](https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/demo.png)
 
 ## 🛠 Installation & Set Up
 
