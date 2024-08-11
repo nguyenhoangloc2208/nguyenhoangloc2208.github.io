@@ -155,11 +155,11 @@ const About = () => {
               opportunities to acquire new knowledge.
             </p> */}
 
-            <p>
+            {/* <p>
               I am looking for an internship or fresher position as a Front-End Developer. I have a
               solid foundation in web development and am eager to apply my skills in a professional
               setting while continuing to learn and grow.
-            </p>
+            </p> */}
 
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
