@@ -3,7 +3,7 @@ module.exports = {
   siteDescription:
     'Hoang Loc is an aspiring software engineer with experiences in frontend development, data modeling & visualization',
   siteKeywords:
-    'Nguyen Hoang Loc, Hoang Loc, Nguyen, Hoang, Loc, Beru, Beru portfolio, computer science, statistics, data scientist, software engineer, front-end engineer, web developer, javascript, python, viettridao',
+    'Nguyen Hoang Loc, Hoang Loc, Nguyen, Hoang, Loc, Beru, Beru portfolio, computer science, statistics, data scientist, software engineer, front-end engineer, web developer, javascript, python, vue.js, react.js, html5, css3, scss, node.js, full-stack developer, machine learning, artificial intelligence, data analysis, data visualization, UX/UI design, responsive design, performance optimization, SEO, JAMstack, REST API, MongoDB, Docker, Git, GitHub, agile development',
   siteUrl: 'https://nguyenhoangloc2208.github.io',
   email: 'nguyenhoangloc2208@gmail.com',
 

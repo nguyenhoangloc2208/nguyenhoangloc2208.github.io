@@ -44,6 +44,12 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
+  .github-link {
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 50px;
+    margin-left: 20px;
+  }
 `;
 
 const Hero = () => {
@@ -65,21 +71,30 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a recently graduated software engineer intern actively seeking a full-time internship
-        position focused on React.js and Vue.js. I'm passionate about crafting technology products
-        to deliver optimal user experiences and eager to learn and grow my skills in a new work
-        environment.
+        I’m a recent software engineering graduate and a frontend developer specializing in Vue.js.
+        I’m passionate about building technology products that deliver seamless user experiences.
+        Eager to continue learning and growing in a dynamic work environment, I’m looking for
+        opportunities to further enhance my skills and contribute to impactful projects.
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://github.com/nguyenhoangloc2208"
-      target="_blank"
-      rel="noreferrer">
-      Check out my github!
-    </a>
+    <div>
+      <a
+        className="email-link"
+        href="https://github.com/nguyenhoangloc2208"
+        target="_blank"
+        rel="noreferrer">
+        Check out my github!
+      </a>
+      <a
+        className="github-link"
+        href="https://github.com/locflamedia"
+        target="_blank"
+        rel="noreferrer">
+        Check out other github!
+      </a>
+    </div>
   );
 
   const items = [one, two, three, four, five];

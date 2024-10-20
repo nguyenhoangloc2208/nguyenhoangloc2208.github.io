@@ -129,9 +129,11 @@ const About = () => {
     'Python',
     'React',
     'Vue',
+    'Nuxt',
     'Django',
     'Node.js',
     'Tailwind CSS',
+    'Wordpress',
   ];
 
   return (
