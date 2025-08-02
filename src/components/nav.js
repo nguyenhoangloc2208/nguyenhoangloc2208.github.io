@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--header-bg);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -33,17 +33,17 @@ const StyledHeader = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
-    props.scrollDirection === 'up' &&
+      props.scrollDirection === 'up' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: var(--header-bg);
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
 
     ${props =>
-    props.scrollDirection === 'down' &&
+      props.scrollDirection === 'down' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
@@ -150,7 +150,14 @@ const StyledLinks = styled.div`
   }
 `;
 
-const Nav = ({ isHome }) => {
+const StyledThemeToggle = styled.button`
+  ${({ theme }) => theme.mixins.smallButton};
+  padding: 0.75rem 1rem;
+  font-size: var(--fz-xs);
+  margin-left: 15px;
+`;
+
+const Nav = ({ isHome, toggleTheme }) => {
   const [isMounted, setIsMounted] = useState(!isHome);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
@@ -228,6 +235,7 @@ const Nav = ({ isHome }) => {
                   ))}
               </ol>
               <div>{ResumeLink}</div>
+              <StyledThemeToggle onClick={toggleTheme}>Theme</StyledThemeToggle>
             </StyledLinks>
 
             <Menu />
@@ -266,6 +274,19 @@ const Nav = ({ isHome }) => {
                   </CSSTransition>
                 )}
               </TransitionGroup>
+
+              <TransitionGroup component={null}>
+                {isMounted && (
+                  <CSSTransition
+                    classNames={fadeDownClass}
+                    timeout={timeout + navLinks.length * 100}>
+                    <div
+                      style={{ transitionDelay: `${isHome ? (navLinks.length + 1) * 100 : 0}ms` }}>
+                      <StyledThemeToggle onClick={toggleTheme}>Theme</StyledThemeToggle>
+                    </div>
+                  </CSSTransition>
+                )}
+              </TransitionGroup>
             </StyledLinks>
 
             <TransitionGroup component={null}>
@@ -284,6 +305,7 @@ const Nav = ({ isHome }) => {
 
 Nav.propTypes = {
   isHome: PropTypes.bool,
+  toggleTheme: PropTypes.func.isRequired,
 };
 
 export default Nav;

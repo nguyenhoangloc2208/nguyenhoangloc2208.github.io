@@ -443,6 +443,15 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  [data-theme="light"] {
+    .project-image a {
+      &:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+
   ${TransitionStyles};
 
   ${PrismStyles};

@@ -17,6 +17,8 @@ const variables = css`
     --pink: #f57dff;
     --blue: #57cbff;
 
+    --header-bg: rgba(10, 25, 47, 0.85);
+
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -47,6 +49,25 @@ const variables = css`
     --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     --ham-after-active: bottom 0.1s ease-out,
       transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  }
+
+  /* Light mode variables */
+  :root[data-theme='light'] {
+    --dark-navy: #f8f8f8;
+    --navy: #ffffff;
+    --light-navy: #f0f0f0;
+    --lightest-navy: #e8e8e8;
+    --navy-shadow: rgba(0, 0, 0, 0.1);
+    --dark-slate: #2c3e50;
+    --slate: #34495e;
+    --light-slate: #7f8c8d;
+    --lightest-slate: #95a5a6;
+    --white: #000000;
+    --green: #27ae60;
+    --green-tint: rgba(39, 174, 96, 0.1);
+    --pink: #e74c3c;
+    --blue: #3498db;
+    --header-bg: rgba(255, 255, 255, 0.85);
   }
 `;
 

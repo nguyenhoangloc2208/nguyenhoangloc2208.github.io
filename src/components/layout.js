@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
-import { GlobalStyle, theme } from '@styles';
+import { GlobalStyle, theme as styledTheme } from '@styles';
+import useTheme from '@hooks/useTheme';
 
 const StyledContent = styled.div`
   display: flex;
@@ -13,6 +14,7 @@ const StyledContent = styled.div`
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
+  const [theme, toggleTheme] = useTheme();
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
@@ -51,7 +53,7 @@ const Layout = ({ children, location }) => {
       <Head />
 
       <div id="root">
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={styledTheme}>
           <GlobalStyle />
 
           <a className="skip-to-content" href="#content">
@@ -62,7 +64,7 @@ const Layout = ({ children, location }) => {
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
-              <Nav isHome={isHome} />
+              <Nav isHome={isHome} toggleTheme={toggleTheme} theme={theme} />
               <Social isHome={isHome} />
               <Email isHome={isHome} />
 
