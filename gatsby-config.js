@@ -30,12 +30,6 @@ module.exports = {
     },
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
