@@ -49,6 +49,10 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
     margin-left: 20px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      margin-left: 0px;
+    }
   }
 `;
 
