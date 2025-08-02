@@ -23,6 +23,8 @@ jobs:
 
       - name: Build
         run: yarn build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Deploy
         run: | 
