@@ -58,11 +58,11 @@ const Head = ({ title, description, image }) => {
         type="image/x-icon"
         href="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/logo.png"></link>
       {/* Start Easy AI Chat */}
-      <script src="https://staging.widget.easyaichat.app/dist/widget/main.js"></script>
+      <script src="https://widget.easyaichat.app/dist/widget/main.js"></script>
       <script>{`
         document.addEventListener('DOMContentLoaded', function() {
           if (window.EasyAIChat) {
-            window.EasyAIChat.init({"handle":"nguyenhoangloc2208githubio"})
+            window.EasyAIChat.init({"handle":"nguyenhoangloc2208githubio-2fh"})
           }
         });
       `}</script>
