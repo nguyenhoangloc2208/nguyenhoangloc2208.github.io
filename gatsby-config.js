@@ -17,6 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
+        output: `/sitemap.xml`,
         query: `
           {
             site {
@@ -31,10 +32,9 @@ module.exports = {
             }
           }
         `,
-        output: `/sitemap.xml`,
-        serialize: ({ path, site }) => {
+        serialize: ({ path }) => {
           return {
-            url: site.siteMetadata.siteUrl + path,
+            url: config.siteUrl + path,
             changefreq: `daily`,
             priority: 0.7,
           };
