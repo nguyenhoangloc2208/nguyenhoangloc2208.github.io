@@ -32,14 +32,9 @@ module.exports = {
           }
         `,
         output: `/sitemap.xml`,
-        serialize: ({
-          path,
-          site: {
-            siteMetadata: { siteUrl },
-          },
-        }) => {
+        serialize: ({ path, site }) => {
           return {
-            url: siteUrl + path,
+            url: site.siteMetadata.siteUrl + path,
             changefreq: `daily`,
             priority: 0.7,
           };
