@@ -61,7 +61,7 @@ const Head = ({ title, description, image }) => {
       <script
         src="https://widget.easyaichat.app/dist/widget/main.js"
         defer
-        onload="window.EasyAIChat.init({handle:'nguyenhoangloc2208githubio-2fh'})"></script>
+        onload="window.EasyAIChat.init({handle:'nguyenhoangloc2208githubio'})"></script>
       {/* End Easy AI Chat */}
     </Helmet>
   );
