@@ -58,9 +58,9 @@ const Head = ({ title, description, image }) => {
         type="image/x-icon"
         href="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/logo.png"></link>
       <script
-        src="https://widget.easyaichat.app/dist/widget/main.js"
+        src="https://staging.widget.easyaichat.app/dist/widget/main.js"
         defer
-        onload="window.EasyAIChat.init({handle:'nguyenhoangloc2208githubio-2fh'})"></script>
+        onload="window.EasyAIChat.init({handle:'nguyenhoangloc2208githubio'})"></script>
     </Helmet>
   );
 };
