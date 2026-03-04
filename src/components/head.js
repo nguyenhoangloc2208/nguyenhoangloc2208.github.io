@@ -57,10 +57,15 @@ const Head = ({ title, description, image }) => {
         rel="icon"
         type="image/x-icon"
         href="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/logo.png"></link>
-      <script
+      {/* <script
         src="https://staging.widget.geteasy.ai/dist/widget/main.js" defer
         onload="window.EasyAI.init({workspaceUuid:'601c013a-0dc7-44c6-abf3-f94a0299de13'})">
+      </script> */}
+      <script
+        src="https://staging.widget.geteasy.ai/dist/widget/main.js" defer
+        onload="window.EasyAI.init({workspaceUuid:'18193462-6eba-4fc1-8da9-536e1424ce51'})">
       </script>
+
       {/* <script
         src="https://widget.easyaichat.app/dist/widget/main.js" defer
         onload="window.EasyAIChat.init({handle:'nguyenhoangloc2208githubio-2fh'})">
