@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://nguyenhoangloc2208.github.io/sitemap.xml
+Host: https://nguyenhoangloc2208.github.io
