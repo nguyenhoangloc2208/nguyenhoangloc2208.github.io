@@ -59,7 +59,7 @@ const Head = ({ title, description, image }) => {
         href="https://raw.githubusercontent.com/nguyenhoangloc2208/nguyenhoangloc2208.github.io/source/src/images/logo.png"></link>
 <script
   src="https://staging.widget.geteasy.ai/dist/widget/main.js" defer
-  onload="window.EasyAI.init({workspaceUuid:'601c013a-0dc7-44c6-abf3-f94a0299de13'})">
+  onload="window.EasyAI.init({workspaceUuid:'d10c463f-4028-4d04-be84-eb4efbb1f6f3'})">
 </script>
       {/* <script
         src="https://staging.widget.geteasy.ai/dist/widget/main.js" defer
